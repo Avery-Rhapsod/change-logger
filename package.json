@@ -1,0 +1,48 @@
+{
+  "name": "change-logger",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "inspect:pptx": "tsx scripts/inspect-pptx.ts",
+    "test:pptx-reader": "tsx scripts/test-pptx-reader.ts",
+    "create:modified-sample": "tsx scripts/create-modified-sample.ts",
+    "compare:pptx": "tsx scripts/compare-pptx.ts",
+    "create:structural-sample": "tsx scripts/create-structural-sample.ts",
+    "create:paragraph-sample": "tsx scripts/create-paragraph-sample.ts",
+    "test:version-comparison": "tsx scripts/test-version-comparison.ts",
+    "create:third-version": "tsx scripts/create-third-version.ts",
+    "test:history": "tsx scripts/test-presentation-history.ts",
+    "create:samples:v2": "tsx scripts/create-v2-samples.ts",
+    "server": "tsx src/server.ts"
+  },
+  "dependencies": {
+    "@web-ppt/core": "^0.5.0",
+    "express": "^5.3.0",
+    "fast-xml-parser": "^5.11.2",
+    "jszip": "^3.10.2",
+    "multer": "^2.5.0",
+    "pptxgenjs": "^4.0.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.89.0",
+    "tsx": "^4.23.15",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.5"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

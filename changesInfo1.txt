@@ -1,0 +1,34 @@
+the xml file is named changesInfo1.xml
+
+<pc:docChgLst>
+    <pc:chgData ... />
+
+    <pc:docChg chg="modSld">
+        <pc:chgData ... />
+
+        <pc :sldChg chg ="modSp">
+            <pc:chgData ... />
+
+            <pc:spChg chg="mod">
+                ...
+            </pc:spChg>
+
+        </pc:sldChg>
+    </pc:docChg>
+</pc:docChgLst>
+
+
+XML tag
+dogChgLst               Main container holding the document's change history
+docChg                  Represents a change made at document level
+chgData                 Contains information about who made the change and when
+docMkLst                Contains document-level creation markers
+docMk                   Marks a document-related creation event
+sldChg                  Represents a change associated with a specific slide
+sldMkLst                Contains markers identifying the relevant slide
+sldMk                   Identifies a slide involved in the change
+spMkLst                 Contains markers identifying the affected shape
+spMk                    Identifies a particular shape or object
+graphicFrameChg         Represents a modification to a graphic frame, such as a table, chart or other embedded graphic object
+graphicFrameMkLst       Contains markers identifying the affected graphic frame
+graphicFrameMk          Identifies a particular graphic frame
